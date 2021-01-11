@@ -1,0 +1,6 @@
+<ul class="todo-list">
+    <app-item-todo *ngFor="let item of todos | filtroTodo:filtroActual" [todo]="item"></app-item-todo>
+    <p *ngIf="todos.length === 0" style="text-align: center;color:#b83f45;font-size: 17px;padding:18px;">
+        No se encuentra ningun ToDo registrado
+    </p>
+</ul>
